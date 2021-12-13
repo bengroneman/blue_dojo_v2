@@ -8,6 +8,22 @@
 	const projects = query(client, { query: GET_PROJECTS })
 </script>
 
+<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//137.184.6.67/tracker.js', 'fathom');
+fathom('set', 'siteId', 'NUCOW');
+fathom('trackPageview');
+</script>
+<!-- / Fathom -->
+
 <main>
 	<h1>Blue Dojo Dev</h1>
 	<div>
